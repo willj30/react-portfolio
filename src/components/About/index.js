@@ -14,7 +14,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import GitHubCalendar from 'react-github-calendar'
-import { Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -32,6 +32,11 @@ const About = () => {
                 <p>Lorem Ipsum</p>
                 <p>Lorem Ipsum</p>
                 <p>Lorem Ipsum</p>
+                <div>
+                <Link to="https://docs.google.com/document/d/1IzeSrmkEXuzt3uDrNTm_dLLTsVpDrGLQQYHU3qBHidk/edit?usp=sharing" className="flat-button">
+                    VIEW RESUME
+                </Link>
+                </div>
             </div>
 
             <div className="stage-cube-cont">
@@ -60,7 +65,7 @@ const About = () => {
         </div>
         <div className='github-container'>
       <h1>
-        Days I Code
+        GitHub Activity
       </h1>
       <GitHubCalendar
         username="willj30"

@@ -102,6 +102,11 @@ nav {
             content: 'INSTAGRAM';
         }
     }
+    a.resume-link {
+        &::after {
+            content: 'RESUME';
+        }
+    }
 
     a.active {
         svg {

@@ -4,6 +4,10 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
     return (
+        <div id="home" className="intro route bg-image background">
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
         <div className="App">
             <Sidebar />
             <div className='page'>
@@ -17,6 +21,7 @@ const Layout = () => {
                     <span className="bottom-tag-html"></span>
                 </span>
             </div>
+        </div>
         </div>
     )
 }

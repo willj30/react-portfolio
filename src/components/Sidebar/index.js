@@ -2,7 +2,7 @@ import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import LogoWJ from '../../assets/images/wj-logo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub, faInstagram,} from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
@@ -31,6 +31,7 @@ const Sidebar = () => (
             >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
+         
             <NavLink
                 target="_blank"
                 rel="noreferrer"
