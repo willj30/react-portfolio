@@ -13,6 +13,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
+import GitHubCalendar from 'react-github-calendar'
+import { Row } from 'react-bootstrap'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -54,7 +56,20 @@ const About = () => {
                     </div>
                 </div>
             </div>
+         
         </div>
+        <div className='github-container'>
+      <h1>
+        Days I Code
+      </h1>
+      <GitHubCalendar
+        username="willj30"
+        blockSize={15}
+        blockMargin={5}
+        color="#c084f5"
+        fontSize={16}
+      />
+    </div>
         <Loader type="cube-transition" />
         </>
     )
