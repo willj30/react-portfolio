@@ -7,7 +7,6 @@ import LogoWJ from '../../../assets/images/wj-logo.jpg'
 
 const Logo = () => {
     const bgRef = useRef()
-    const outlineLogoRef = useRef()
     const solidLogoRef = useRef()
   
     useEffect(() => {

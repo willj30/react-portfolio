@@ -2,14 +2,13 @@ import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
-import { EmailJSResponseStatus } from '@emailjs/browser'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 
 const Contact = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
     const refForm = useRef()
 
     const sendEmail = (e) => {

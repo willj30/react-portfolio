@@ -2,9 +2,9 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { useState } from 'react'
 import {
-    faAngular,
+    
     faCss3,
-    faGitAlt,
+    
     faGithub,
     faHtml5,
     faJsSquare,
