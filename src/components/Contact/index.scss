@@ -73,3 +73,44 @@
       margin-right: 10px;
     }
   }
+
+  .info-map {
+    position: absolute;
+    background: black;
+    top: 50px;
+    right: 30%;
+    z-index: 999999;
+    width: 276px;
+    padding: 20px;
+    color: white;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+
+    span {
+        font-size: 16px;
+        display: block;
+        padding-top: 20px;
+        color: lightblue;
+
+    }
+  }
+
+  .map-wrap {
+    background: rgba(8, 253, 216, 0.1);
+    float: right;
+    width: 49%;
+    height: 100%;
+  }
+
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }

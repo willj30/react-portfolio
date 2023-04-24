@@ -5,6 +5,8 @@ import Loader from 'react-loaders'
 import { EmailJSResponseStatus } from '@emailjs/browser'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -96,6 +98,23 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
+                </div>
+                <div className="info-map">
+                    Will Jaramillo,
+                    <br/>
+                    United States,
+                    <br/>
+                    Leander, Texas <br />
+                    <span>willjaramillo30@gmail.com</span>
+                </div>
+                <div className="map-wrap">
+                    <MapContainer center={[30.55666, -97.85616]} zoom={10}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker
+                            position={[30.55666, -97.85616]}>
+                            <Popup> Will lives about 30 minutes North of Austin, Texas.</Popup>
+                        </Marker>
+                    </MapContainer>
                 </div>
             </div>
             <Loader type="cube-transition" />
