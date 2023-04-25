@@ -20,15 +20,17 @@
   For this application to work, you will need to clone it, run npm install, then npm start.
   
   ## Usage
-  With my portfolio you will see me showcase the skill's I have learned during the UT Full Stack coding bootcamp. Feel free to use my portfolio as an example for something you'd like to create.
+  With my portfolio you will see me showcase the skill's I have learned during the UT Full Stack coding bootcamp. Feel free to use my portfolio as an example for something you'd like to create. Either follow the installation instructions or cross your fingers that it's been successfully deployed on Heroku below since the time of this push!
 
-  Screenshot:
-
-![alt text](./src/assets/images/portfolio-sc.png)
 
 Demonstration:
 
- [![Watch the video](./assets/images/tpgv-sc.png)](https://drive.google.com/file/d/1BLy-M0GcvehctYPl4A5xCqcIu56COLT-/view)
+ [![Watch the video](./src/assets/images/recording-sc.png)](https://drive.google.com/file/d/1jEr7ZUEnOVocFgy42jzJyMIEHM2CYNND/view)
+
+
+ Heroku:
+
+ [![https://willj-portfolio.herokuapp.com/]](https://willj-portfolio.herokuapp.com/)
 
   ## License
   The license this project is under is MIT. For more information, please click the link below:
