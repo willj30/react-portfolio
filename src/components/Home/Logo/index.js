@@ -1,7 +1,5 @@
 
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
+import { useRef } from 'react'
 import './index.scss'
 import profile from '../../../assets/images/profile.png'
 
@@ -9,22 +7,7 @@ const Logo = () => {
     const bgRef = useRef()
     const solidLogoRef = useRef()
   
-    useEffect(() => {
-      gsap.registerPlugin(DrawSVGPlugin)
-  
-   
-  
-      gsap.fromTo(
-        solidLogoRef.current,
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          delay: 2.5,
-          duration: 4,        }
-      )
-    }, [])
+
     
     return (
         <div className="logo-container" ref={bgRef}>
