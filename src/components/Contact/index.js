@@ -50,8 +50,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quasi, voluptate.
+                        I live just outside of Austin, Texas. I am currently open to full-time positions as a Full Stack Developer or Product Owner. I am also happy to work on side projects. Feel free to reach out to me with any questions or opportunities.
                     </p>
                     <div className="contact-form">
                         <form ref={refForm} onSubmit={sendEmail}>

@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import './index.scss'
-import LogoWJ from '../../../assets/images/wj-logo.jpg'
+import profile from '../../../assets/images/profile.png'
 
 const Logo = () => {
     const bgRef = useRef()
@@ -28,7 +28,7 @@ const Logo = () => {
     
     return (
         <div className="logo-container" ref={bgRef}>
-            <img ref={solidLogoRef} className="solid-logo" src={LogoWJ} alt="WJ"/>
+            <img ref={solidLogoRef} className="solid-logo" src={profile} alt="WJ"/>
             <svg
         width="559pt"
         height="897pt"

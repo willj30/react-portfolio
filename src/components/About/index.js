@@ -27,9 +27,10 @@ const About = () => {
                             idx={15}
                         />
                     </h1>
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
+                    <p>I recently completed the UT Austin Full-Stack coding bootcamp and look forward to continuing to learn and improve my skills. To the right are just a few of the languages I have learned which also include: AJAX · GraphQL · SQL · GitHub · Node.js · Express.js · Shell Scripting · Bash · HTML · CSS · JavaScript · Responsive Web Design · Bootstrap · Progressive Web Applications (PWAs) · Session Storage · IndexedDB · React.js · Client-Server Model · API Development · RESTful WebServices · JSON</p>
+                    <p>For my day job, I sell K12 administrative software to school districts across Texas and help them move away from paper processes and into the 21st century with more efficient, and automated, workflows.</p>
+                    <p>I also have a side business where I make and sell hot sauces at the local farmers market. These are all homemade and I have five flavors! Check them out at <a target='_blank'  href='https://www.willysworldfamous.com'>www.willysworldfamous.com or through my instagram link in the sidebar.</a></p>
+                    <p>At home, I live with my fiance, newborn son, and two dogs. We love to travel every chance we get! As for hobbies, I enjoy restoring retro video game consoles and games, repairing bicycles, and all kinds of DIY projects around the house</p>
                     <div>
                         <Link
                             to="https://docs.google.com/document/d/1IzeSrmkEXuzt3uDrNTm_dLLTsVpDrGLQQYHU3qBHidk/edit?usp=sharing"
