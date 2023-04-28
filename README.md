@@ -20,7 +20,7 @@
   For this application to work, you will need to clone it, run npm install, then npm start.
   
   ## Usage
-  With my portfolio you will see me showcase the skill's I have learned during the UT Full Stack coding bootcamp. Feel free to use my portfolio as an example for something you'd like to create. Either follow the installation instructions or cross your fingers that it's been successfully deployed on Heroku below since the time of this push!
+  With my portfolio you will see me showcase the skill's I have learned during the UT Full Stack coding bootcamp. Feel free to use my portfolio as an example for something you'd like to create. Either follow the installation instructions, watch the demonstration, or click the link to see the now successfully deployed app on heroku.
 
 
 Demonstration:
