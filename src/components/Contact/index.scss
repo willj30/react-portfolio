@@ -1,7 +1,10 @@
 
 .contact-form {
+    display: flex;
     width: 100%;
     margin-top: 20px;
+    justify-content: center;
+    
   
     ul {
       padding: 0;
@@ -78,7 +81,7 @@
     position: absolute;
     background: black;
     top: 50px;
-    right: 15%;
+    right: 20%;
     z-index: 999999;
     width: 276px;
     padding: 20px;
