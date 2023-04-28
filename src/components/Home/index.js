@@ -6,7 +6,6 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
 
-
 const Home = () => {
     const [letterClass] = useState('text-animate')
     const nameArray = [
@@ -75,9 +74,8 @@ const Home = () => {
                     <Link to="/contact" className="flat-button">
                         CONTACT ME
                     </Link>
-
                 </div>
-                
+
                 <Logo />
             </div>
             <Loader type="cube-transition" />

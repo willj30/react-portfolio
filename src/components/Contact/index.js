@@ -6,26 +6,30 @@ import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
-
 const Contact = () => {
     const [letterClass] = useState('text-animate')
     const refForm = useRef()
 
     const sendEmail = (e) => {
         e.preventDefault()
-    
+
         emailjs
-          .sendForm('service_2tfy6po', 'template_n35cxms', refForm.current, 'CPtnCVVgXyn0TaiEP')
-          .then(
-            () => {
-              alert('Message successfully sent!')
-              window.location.reload(false)
-            },
-            () => {
-              alert('Oops! Soething went wrong, please try again')
-            }
-          )
-      }
+            .sendForm(
+                'service_2tfy6po',
+                'template_n35cxms',
+                refForm.current,
+                'CPtnCVVgXyn0TaiEP'
+            )
+            .then(
+                () => {
+                    alert('Message successfully sent!')
+                    window.location.reload(false)
+                },
+                () => {
+                    alert('Oops! Soething went wrong, please try again')
+                }
+            )
+    }
 
     return (
         <>
@@ -50,7 +54,9 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        I live in Leander, TX which is about 30 minutes North of Austin. Feel free to reach out to me with any questions or opportunities.
+                        I live in Leander, TX which is about 30 minutes North of
+                        Austin. Feel free to reach out to me with any questions
+                        or opportunities.
                     </p>
                     <div className="contact-form">
                         <form ref={refForm} onSubmit={sendEmail}>
@@ -99,18 +105,21 @@ const Contact = () => {
                 </div>
                 <div className="info-map">
                     Will Jaramillo,
-                    <br/>
+                    <br />
                     United States,
-                    <br/>
+                    <br />
                     Leander, Texas <br />
                     <span>willjaramillo30@gmail.com</span>
                 </div>
                 <div className="map-wrap">
                     <MapContainer center={[30.55666, -97.85616]} zoom={10}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                        <Marker
-                            position={[30.55666, -97.85616]}>
-                            <Popup> Will lives about 30 minutes North of Austin, Texas.</Popup>
+                        <Marker position={[30.55666, -97.85616]}>
+                            <Popup>
+                                {' '}
+                                Will lives about 30 minutes North of Austin,
+                                Texas.
+                            </Popup>
                         </Marker>
                     </MapContainer>
                 </div>

@@ -2,8 +2,17 @@ import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import LogoWJ from '../../assets/images/wj-logo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faInstagram,} from '@fortawesome/free-brands-svg-icons'
+import {
+    faHome,
+    faUser,
+    faEnvelope,
+    faFileInvoice,
+} from '@fortawesome/free-solid-svg-icons'
+import {
+    faLinkedin,
+    faGithub,
+    faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
     <div className="nav-bar">
@@ -26,21 +35,20 @@ const Sidebar = () => (
             <NavLink
                 exact="true"
                 activeclassname="active"
-                className="portfolio-link"
-                to="/portfolio"
-            >
-                <FontAwesomeIcon icon={faFileInvoice} color="#4d4d4e" />
-            </NavLink>
-            <NavLink
-                exact="true"
-                activeclassname="active"
                 className="contact-link"
                 to="/contact"
             >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
-            
-         
+            <NavLink
+                exact="true"
+                activeclassname="active"
+                className="portfolio-link"
+                to="/portfolio"
+            >
+                <FontAwesomeIcon icon={faFileInvoice} color="#4d4d4e" />
+            </NavLink>
+
             <NavLink
                 target="_blank"
                 rel="noreferrer"
@@ -72,7 +80,6 @@ const Sidebar = () => (
             >
                 <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
             </NavLink>
-           
         </nav>
     </div>
 )
