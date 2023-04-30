@@ -21,7 +21,7 @@
         clear: both;
         position: relative;
         animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards;  
       }
   
       li.half {
@@ -29,6 +29,7 @@
         margin-left: 2%;
         float: left;
         clear: none;
+        
   
         &:first-child {
           margin-left: 0;

@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import GitHubCalendar from 'react-github-calendar'
 import { Link } from 'react-router-dom'
+import { SiAmazonaws, SiUnrealengine, SiMysql } from 'react-icons/si'
 
 const About = () => {
     const [letterClass] = useState('text-animate')
@@ -28,15 +29,16 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        I completed the UT Austin Full-Stack coding bootcamp
-                        April of 2023 and look forward to continuing to learn
-                        and improve my skills. A few of the languages I have
-                        learned include: HTML· CSS · JavaScript ·AJAX · GraphQL
-                        · SQL/NoSQL · Node.js · Express.js · Shell Scripting ·
-                        Bash · Responsive Web Design · Bootstrap · Progressive
-                        Web Applications (PWAs) · Session Storage · IndexedDB ·
-                        React · Client-Server Model · API Development · RESTful
-                        WebServices · JSON
+                        I completed the UT Austin Full-Stack coding bootcamp in
+                        April of 2023 and plan to continue improving my skills.
+                        Programs I am familiar with include: HTML· CSS ·
+                        JavaScript ·AJAX · GraphQL · SQL/NoSQL · Node.js ·
+                        Express.js · Shell Scripting · Bash · Responsive Web
+                        Design · Bootstrap · Progressive Web Applications (PWAs)
+                        · Session Storage · IndexedDB · React · Client-Server
+                        Model · API Development · RESTful WebServices · JSON.
+                        Programs I am looking into after class are Unreal
+                        Engine, C++, and AWS.
                     </p>
                     <p>
                         {' '}
@@ -81,18 +83,18 @@ const About = () => {
                             <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
                         </div>
                         <div className="face2">
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                            <SiAmazonaws icon={SiAmazonaws} color="#FF9900" />
                         </div>
                         <div className="face3">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                            <SiMysql icon={SiMysql} color="#00758f" />
                         </div>
                         <div className="face4">
                             <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
                         </div>
                         <div className="face5">
-                            <FontAwesomeIcon
-                                icon={faJsSquare}
-                                color="#EFD81D"
+                            <SiUnrealengine
+                                icon={SiUnrealengine}
+                                color="#FFFFFF"
                             />
                         </div>
                         <div className="face6">

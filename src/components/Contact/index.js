@@ -55,8 +55,8 @@ const Contact = () => {
                     </h1>
                     <p>
                         I live in Leander, TX which is about 30 minutes North of
-                        Austin. Feel free to reach out to me with any questions
-                        or opportunities.
+                        Austin. Feel free to reach out to me with any questions,
+                        opportunities or to grab a cup of coffee.
                     </p>
                     <div className="contact-form">
                         <form ref={refForm} onSubmit={sendEmail}>
@@ -117,8 +117,8 @@ const Contact = () => {
                         <Marker position={[30.55666, -97.85616]}>
                             <Popup>
                                 {' '}
-                                Will lives about 30 minutes North of Austin,
-                                Texas.
+                                Will lives in Leander, about 30 minutes North of
+                                Austin.
                             </Popup>
                         </Marker>
                     </MapContainer>
