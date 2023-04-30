@@ -37,20 +37,20 @@ const About = () => {
                         Design · Bootstrap · Progressive Web Applications (PWAs)
                         · Session Storage · IndexedDB · React · Client-Server
                         Model · API Development · RESTful WebServices · JSON.
-                        Programs I am looking into after class are Unreal
-                        Engine, C++, and AWS.
+                        Programs I am learning after class are Unreal
+                        Engine 5.1, C++, and AWS.
                     </p>
                     <p>
                         {' '}
                         In my day job, I sell K12 administrative software to
-                        school districts across Texas and help them move away
+                        school districts across Texas to help them move away
                         from paper processes and into the 21st century with more
-                        efficient, and automated, workflows.
+                        efficient, automated, workflows.
                     </p>
                     <p>
                         I also run a side business where I make and sell hot
                         sauces at the local farmers market. These are all
-                        homemade and I have five flavors! Check them out at{' '}
+                        homemade and I have five "personalities" modeled after an anime crew! Check them out at{' '}
                         <a
                             target="_blank"
                             rel="noreferrer"
