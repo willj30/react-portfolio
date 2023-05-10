@@ -8,6 +8,11 @@ import listup from '../../assets/images/listup.jpg'
 import teamProfile from '../../assets/images/teamProfile.png'
 import dayOff from '../../assets/images/dayOff.png'
 import weatherApp from '../../assets/images/weatherApp.png'
+import portfoliosc from '../../assets/images/portfolio-sc.png'
+import notetaker from '../../assets/images/notetaker.png'
+import readmesc from '../../assets/images/readmesc.png'
+import jsquiz from '../../assets/images/jsquiz.png'
+import pwgen from '../../assets/images/pwgen.png'
 
 const Portfolio = () => {
     const [letterClass] = useState('text-animate')
@@ -17,6 +22,34 @@ const Portfolio = () => {
         return (
             <>
                 <div className="portfolio-container">
+                    <div className="images-container ">
+                        {
+                            <div className="image-box">
+                                <img
+                                    src={portfoliosc}
+                                    className="portfolio-image"
+                                    alt="portfolio"
+                                />
+                                <div className="content">
+                                    <p className="title">React Portfolio</p>
+                                    <h4 className="description">
+                                        This very React application that
+                                        showcases my skills and projects.
+                                    </h4>
+                                    <button
+                                        className="btn"
+                                        onClick={() =>
+                                            window.open(
+                                                'https://github.com/willj30/react-portfolio'
+                                            )
+                                        }
+                                    >
+                                        GitHub Repo
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
                     <div className="images-container">
                         {
                             <div className="image-box">
@@ -77,7 +110,7 @@ const Portfolio = () => {
                             </div>
                         }
                     </div>
-                    <div className="images-container">
+                    <div className="images-container ">
                         {
                             <div className="image-box">
                                 <img
@@ -89,7 +122,8 @@ const Portfolio = () => {
                                     <p className="title">List Up Marketplace</p>
                                     <h4 className="description">
                                         E-Commerce application that allows users
-                                        to buy and sell niche items.
+                                        to buy and sell niche items after
+                                        logging in.
                                     </h4>
                                     <button
                                         className="btn"
@@ -105,8 +139,7 @@ const Portfolio = () => {
                             </div>
                         }
                     </div>
-                </div>
-                <div className="portfolio-container">
+
                     <div className="images-container">
                         {
                             <div className="image-box">
@@ -177,14 +210,130 @@ const Portfolio = () => {
                                 <div className="content">
                                     <p className="title">Weather App</p>
                                     <h4 className="description">
-                                        App for checking the weather in any
-                                        city.
+                                        App that uses Weather API for checking
+                                        the weather in any city.
                                     </h4>
                                     <button
                                         className="btn"
                                         onClick={() =>
                                             window.open(
                                                 'https://willj30.github.io/weather-dashboard/'
+                                            )
+                                        }
+                                    >
+                                        Deployed App
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div className="images-container">
+                        {
+                            <div className="image-box">
+                                <img
+                                    src={readmesc}
+                                    className="portfolio-image"
+                                    alt="portfolio"
+                                />
+                                <div className="content">
+                                    <p className="title">README Generator</p>
+                                    <h4 className="description">
+                                        Command Line Interface application that
+                                        generates a README.md file based on user
+                                        input.
+                                    </h4>
+                                    <button
+                                        className="btn"
+                                        onClick={() =>
+                                            window.open(
+                                                'https://github.com/willj30/readme-generator'
+                                            )
+                                        }
+                                    >
+                                        GitHub Repo
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div className="images-container">
+                        {
+                            <div className="image-box">
+                                <img
+                                    src={notetaker}
+                                    className="portfolio-image"
+                                    alt="portfolio"
+                                />
+                                <div className="content">
+                                    <p className="title">Note Taker App</p>
+                                    <h4 className="description">
+                                        Express application that saves to the
+                                        cache for keeping track of, and
+                                        deleting, notes.
+                                    </h4>
+                                    <button
+                                        className="btn"
+                                        onClick={() =>
+                                            window.open(
+                                                'https://github.com/willj30/note-taker'
+                                            )
+                                        }
+                                    >
+                                        GitHub Repo
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div className="images-container">
+                        {
+                            <div className="image-box">
+                                <img
+                                    src={jsquiz}
+                                    className="portfolio-image"
+                                    alt="portfolio"
+                                />
+                                <div className="content">
+                                    <p className="title">JavaScript Quiz App</p>
+                                    <h4 className="description">
+                                        This application tests the user's
+                                        knowledge of JavaScript in a timed
+                                        format.
+                                    </h4>
+                                    <button
+                                        className="btn"
+                                        onClick={() =>
+                                            window.open(
+                                                'https://willj30.github.io/javascript-knowledge-test/'
+                                            )
+                                        }
+                                    >
+                                        Deployed App
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div className="images-container">
+                        {
+                            <div className="image-box">
+                                <img
+                                    src={pwgen}
+                                    className="portfolio-image"
+                                    alt="portfolio"
+                                />
+                                <div className="content">
+                                    <p className="title">Password Generator</p>
+                                    <h4 className="description">
+                                        This application allows users to
+                                        generate a password based on selected
+                                        criteria.
+                                    </h4>
+                                    <button
+                                        className="btn"
+                                        onClick={() =>
+                                            window.open(
+                                                'https://willj30.github.io/password-generator/'
                                             )
                                         }
                                     >
@@ -205,12 +354,24 @@ const Portfolio = () => {
                 <h1 className="page-title">
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+                        strArray={[
+                          
+                            'P',
+                            'o',
+                            'r',
+                            't',
+                            'f',
+                            'o',
+                            'l',
+                            'i',
+                            'o',
+                        ]}
                         idx={15}
                     />
                 </h1>
                 <div>{renderPortfolio(portfolio)}</div>
             </div>
+
             <Loader type="cube-transition" />
         </>
     )
