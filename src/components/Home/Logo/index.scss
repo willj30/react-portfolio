@@ -4,7 +4,7 @@
     align-items: center;
     position: absolute;
     top: 0;
-    right: 5%;
+    right: 10%;
     bottom: 0;
     left: 15;
     margin: auto;
@@ -26,11 +26,12 @@
         left: 15%;
         margin: auto;
         width: 60%;
-        opacity: 0;
+        opacity: .85;
+        clear: inline-start;
         z-index: 1;
         border-radius: 50%;
-        animation: fadeIn 4s 1.5s;
-    animation-fill-mode: forwards;
+        animation: fadeIn 4s 1.5s fadeOut 1s;
+    animation-fill-mode: inherit;
 
     }
 }
