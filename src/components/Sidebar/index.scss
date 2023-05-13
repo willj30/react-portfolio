@@ -1,116 +1,382 @@
-.nav-bar {
-    background:black;
-    width: 70px;
-    height: 100%;
-    position:absolute;
-    top: 0;
-    z-index: 3;
-    min-height: 500px;
 
-    .logo {
-        display: block;
+@media only screen and (min-width: 100px) {
+    .nav-bar {
+        background:black;
+        width: 100%;
+        height: 60px;
         
-
-        img {
+        top: 0;
+        left: 0;
+        z-index: 3;
+        min-height: 0;
+    }
+    
+        .logo {
+            float: left;
             display: block;
-            margin: 8px auto;
-            width: 70px;
-            height: auto;
-
+            
+    
+            img {
+                display: block;
+                margin: 5px auto;
+                width: 60px;
+                height: auto;
+    
+            }
         }
     }
-}
-
-nav {
-    display: block;
-    text-align: center;
-    position: absolute;
-    height: 210px;
-    top: 50%;
-    margin-top: -150px;
-    width: 100%;
-
-    a {
-        font-size: 22px;
-        color: #4d4d4e;
-        display: block;
-        line-height: 51px;
-        height: 51px;
-        position: relative;
-        text-decoration: none;
-
-        i {
-            transition: all 0.3s ease-out;
-        }
-
-        &:hover {
-            color: white;
-            background: #000;
-            
-            svg {
-                opacity: 0;
+    
+    nav {
+        width: 42%;
+        position: absolute;
+        left: 50%;
+        margin-left: -19%;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        height: 60px;
+        top: 0;
+        margin-top: 0;
+    
+        a {
+            font-size: 22px;
+            color: #4d4d4e;
+            display: row;
+            align-content: center;
+            line-height: 65px;
+            padding: 10px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+    
+            i {
+                transition: all 0.3s ease-out;
             }
-            
+    
+            &:hover {
+                color: white;
+                background: #000;
+                
+                svg {
+                    opacity: 0;
+                }
+                
+                &:after {
+                    opacity: 1;
+                }
+            }
+    
             &:after {
-                opacity: 1;
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: row;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition : all 0.3s ease-out;
+            
+            }
+    
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
             }
         }
-
-        &:after {
-            content: '';
-            font-size: 9px;
-            letter-spacing: 2px;
-            position: absolute;
-            bottom: 0;
-            display: block;
-            width: 100%;
-            text-align: center;
-            opacity: 0;
-            transition : all 0.3s ease-out;
-        
-        }
-
-        &:first-child {
+    
+        a.about-link {
             &::after {
-                content: 'HOME';
+                content: 'ABOUT';
+            }
+        }
+        a.contact-link {
+            &::after {
+                content: 'CONTACT';
+            }
+        }
+        a.linkedin-link {
+            &::after {
+                content: 'LINKEDIN';
+            }
+        }
+        a.github-link {
+            &::after {
+                content: 'GITHUB';
+            }
+        }
+        a.instagram-link {
+            &::after {
+                content: 'INSTAGRAM';
+            }
+        }
+        a.portfolio-link {
+            &::after {
+                content: 'PORTFOLIO';
+            }
+        }
+    
+        a.active {
+            svg {
+                color: white;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 100px) {
+    .nav-bar {
+        background:black;
+        width: 100%;
+        height: 60px;
+        
+        top: 0;
+        left: 0;
+        z-index: 3;
+        min-height: 0;
+    }
+    
+        .logo {
+            float: left;
+            display: block;
+            
+    
+            img {
+                display: block;
+                margin: 5px auto;
+                width: 60px;
+                height: auto;
+    
+            }
+        }
+    }
+    
+    nav {
+        width: 42%;
+        position: absolute;
+        left: 50%;
+        margin-left: -19%;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        height: 60px;
+        top: 0;
+        margin-top: 0;
+    
+        a {
+            font-size: 22px;
+            color: #4d4d4e;
+            display: row;
+            align-content: center;
+            line-height: 65px;
+            padding: 10px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+    
+            i {
+                transition: all 0.3s ease-out;
+            }
+    
+            &:hover {
+                color: white;
+                background: #000;
+                
+                svg {
+                    opacity: 0;
+                }
+                
+                &:after {
+                    opacity: 1;
+                }
+            }
+    
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: row;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition : all 0.3s ease-out;
+            
+            }
+    
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
+            }
+        }
+    
+        a.about-link {
+            &::after {
+                content: 'ABOUT';
+            }
+        }
+        a.contact-link {
+            &::after {
+                content: 'CONTACT';
+            }
+        }
+        a.linkedin-link {
+            &::after {
+                content: 'LINKEDIN';
+            }
+        }
+        a.github-link {
+            &::after {
+                content: 'GITHUB';
+            }
+        }
+        a.instagram-link {
+            &::after {
+                content: 'INSTAGRAM';
+            }
+        }
+        a.portfolio-link {
+            &::after {
+                content: 'PORTFOLIO';
+            }
+        }
+    
+        a.active {
+            svg {
+                color: white;
             }
         }
     }
 
-    a.about-link {
-        &::after {
-            content: 'ABOUT';
+    @media only screen and (min-width: 100px) {
+    .nav-bar {
+        background:black;
+        width: 100%;
+        height: 60px;
+        
+        top: 0;
+        left: 0;
+        z-index: 3;
+        min-height: 0;
+    }
+    
+        .logo {
+            float: left;
+            display: block;
+            
+    
+            img {
+                display: block;
+                margin: 5px auto;
+                width: 60px;
+                height: auto;
+    
+            }
         }
     }
-    a.contact-link {
-        &::after {
-            content: 'CONTACT';
+    
+    nav {
+        width: 42%;
+        position: absolute;
+        left: 50%;
+        margin-left: -19%;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        height: 60px;
+        top: 0;
+        margin-top: 0;
+    
+        a {
+            font-size: 22px;
+            color: #4d4d4e;
+            display: row;
+            align-content: center;
+            line-height: 65px;
+            padding: 10px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+    
+            i {
+                transition: all 0.3s ease-out;
+            }
+    
+            &:hover {
+                color: white;
+                background: #000;
+                
+                svg {
+                    opacity: 0;
+                }
+                
+                &:after {
+                    opacity: 1;
+                }
+            }
+    
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: row;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition : all 0.3s ease-out;
+            
+            }
+    
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
+            }
         }
-    }
-    a.linkedin-link {
-        &::after {
-            content: 'LINKEDIN';
+    
+        a.about-link {
+            &::after {
+                content: 'ABOUT';
+            }
         }
-    }
-    a.github-link {
-        &::after {
-            content: 'GITHUB';
+        a.contact-link {
+            &::after {
+                content: 'CONTACT';
+            }
         }
-    }
-    a.instagram-link {
-        &::after {
-            content: 'INSTAGRAM';
+        a.linkedin-link {
+            &::after {
+                content: 'LINKEDIN';
+            }
         }
-    }
-    a.portfolio-link {
-        &::after {
-            content: 'PORTFOLIO';
+        a.github-link {
+            &::after {
+                content: 'GITHUB';
+            }
+        }
+        a.instagram-link {
+            &::after {
+                content: 'INSTAGRAM';
+            }
+        }
+        a.portfolio-link {
+            &::after {
+                content: 'PORTFOLIO';
+            }
+        }
+    
+        a.active {
+            svg {
+                color: white;
+            }
         }
     }
 
-    a.active {
-        svg {
-            color: white;
-        }
-    }
-}
+
+
+    
