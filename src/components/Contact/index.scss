@@ -81,15 +81,16 @@
   .info-map {
     position: absolute;
     background: black;
-    top: 65%;
-    right: 10%;
+    top: 70%;
+    right: 35%;
     z-index: 999999;
-    width: 275px;
+    width: 175px;
     padding: 20px;
     color: white;
     font-family: 'Helvetica';
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 
+    200;
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
