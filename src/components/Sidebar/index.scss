@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 100px) {
     .nav-bar {
         background:black;
@@ -27,9 +26,9 @@
     }
     
     nav {
-        width: 42%;
+        width: 50%;
         position: absolute;
-        left: 50%;
+        left: 40%;
         margin-left: -19%;
         float: left;
         overflow: hidden;
@@ -39,12 +38,12 @@
         margin-top: 0;
     
         a {
-            font-size: 22px;
+            font-size: 25px;
             color: #4d4d4e;
-            display: row;
+            display: inline-block;
             align-content: center;
             line-height: 65px;
-            padding: 10px;
+            padding: 1%;
             height: 51px;
             position: relative;
             text-decoration: none;
@@ -68,139 +67,13 @@
     
             &:after {
                 content: '';
-                font-size: 9px;
+                font-size: 10px;
                 letter-spacing: 2px;
                 position: absolute;
                 bottom: 0;
-                display: row;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition : all 0.3s ease-out;
-            
-            }
-    
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
-        }
-    
-        a.about-link {
-            &::after {
-                content: 'ABOUT';
-            }
-        }
-        a.contact-link {
-            &::after {
-                content: 'CONTACT';
-            }
-        }
-        a.linkedin-link {
-            &::after {
-                content: 'LINKEDIN';
-            }
-        }
-        a.github-link {
-            &::after {
-                content: 'GITHUB';
-            }
-        }
-        a.instagram-link {
-            &::after {
-                content: 'INSTAGRAM';
-            }
-        }
-        a.portfolio-link {
-            &::after {
-                content: 'PORTFOLIO';
-            }
-        }
-    
-        a.active {
-            svg {
-                color: white;
-            }
-        }
-    }
-    
-    @media only screen and (min-width: 100px) {
-    .nav-bar {
-        background:black;
-        width: 100%;
-        height: 60px;
-        
-        top: 0;
-        left: 0;
-        z-index: 3;
-        min-height: 0;
-    }
-    
-        .logo {
-            float: left;
-            display: block;
-            
-    
-            img {
                 display: block;
-                margin: 5px auto;
-                width: 60px;
-                height: auto;
-    
-            }
-        }
-    }
-    
-    nav {
-        width: 42%;
-        position: absolute;
-        left: 50%;
-        margin-left: -19%;
-        float: left;
-        overflow: hidden;
-        text-align: center;
-        height: 60px;
-        top: 0;
-        margin-top: 0;
-    
-        a {
-            font-size: 22px;
-            color: #4d4d4e;
-            display: row;
-            align-content: center;
-            line-height: 65px;
-            padding: 10px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
-    
-            i {
-                transition: all 0.3s ease-out;
-            }
-    
-            &:hover {
-                color: white;
-                background: #000;
-                
-                svg {
-                    opacity: 0;
-                }
-                
-                &:after {
-                    opacity: 1;
-                }
-            }
-    
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: row;
                 width: 100%;
-                text-align: center;
+                text-align: left;
                 opacity: 0;
                 transition : all 0.3s ease-out;
             
@@ -250,133 +123,5 @@
             }
         }
     }
-
-    @media only screen and (min-width: 100px) {
-    .nav-bar {
-        background:black;
-        width: 100%;
-        height: 60px;
-        
-        top: 0;
-        left: 0;
-        z-index: 3;
-        min-height: 0;
-    }
     
-        .logo {
-            float: left;
-            display: block;
-            
-    
-            img {
-                display: block;
-                margin: 5px auto;
-                width: 60px;
-                height: auto;
-    
-            }
-        }
-    }
-    
-    nav {
-        width: 42%;
-        position: absolute;
-        left: 50%;
-        margin-left: -19%;
-        float: left;
-        overflow: hidden;
-        text-align: center;
-        height: 60px;
-        top: 0;
-        margin-top: 0;
-    
-        a {
-            font-size: 22px;
-            color: #4d4d4e;
-            display: row;
-            align-content: center;
-            line-height: 65px;
-            padding: 10px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
-    
-            i {
-                transition: all 0.3s ease-out;
-            }
-    
-            &:hover {
-                color: white;
-                background: #000;
-                
-                svg {
-                    opacity: 0;
-                }
-                
-                &:after {
-                    opacity: 1;
-                }
-            }
-    
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: row;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition : all 0.3s ease-out;
-            
-            }
-    
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
-        }
-    
-        a.about-link {
-            &::after {
-                content: 'ABOUT';
-            }
-        }
-        a.contact-link {
-            &::after {
-                content: 'CONTACT';
-            }
-        }
-        a.linkedin-link {
-            &::after {
-                content: 'LINKEDIN';
-            }
-        }
-        a.github-link {
-            &::after {
-                content: 'GITHUB';
-            }
-        }
-        a.instagram-link {
-            &::after {
-                content: 'INSTAGRAM';
-            }
-        }
-        a.portfolio-link {
-            &::after {
-                content: 'PORTFOLIO';
-            }
-        }
-    
-        a.active {
-            svg {
-                color: white;
-            }
-        }
-    }
-
-
-
-    
+   
