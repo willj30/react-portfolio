@@ -42,9 +42,9 @@
             color: #4d4d4e;
             display: inline-block;
             align-content: center;
-            line-height: 65px;
+            line-height: 60px;
             padding: 1%;
-            height: 51px;
+            height: 40px;
             position: relative;
             text-decoration: none;
     
@@ -68,12 +68,12 @@
             &:after {
                 content: '';
                 font-size: 10px;
-                letter-spacing: 2px;
+              
                 position: absolute;
                 bottom: 0;
                 display: block;
-                width: 100%;
-                text-align: left;
+                width: 80%;
+                text-align: center;
                 opacity: 0;
                 transition : all 0.3s ease-out;
             
